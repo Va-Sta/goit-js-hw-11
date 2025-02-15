@@ -8,7 +8,7 @@ searchForm.addEventListener('submit', event => {
   const form = event.target;
   const searchInputValue = form.elements.input.value.trim();
   if (searchInputValue === '') {
-    render.showError('Please enter something');
+    render.showError('Please fill out this field');
     return;
   }
   render.clearGallery();

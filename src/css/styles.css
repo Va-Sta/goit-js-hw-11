@@ -13,8 +13,8 @@ p {
 .search-form {
   display: flex;
   align-items: center;
-  flex-direction: column; /* Розташовує елементи один під одним */
-  justify-content: center; /* Вирівнює по вертикалі */
+  flex-direction: column;
+  justify-content: center;
   flex-direction: row;
   width: 100%;
   gap: 8px;
@@ -157,7 +157,7 @@ body {
 .bold {
   font-weight: 600;
   font-size: 12px;
-  line-height: 1.33333;
+  line-height: 1.33;
   letter-spacing: 0.04em;
   color: #2e2f42;
 }
