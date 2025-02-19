@@ -21,10 +21,10 @@ p {
   margin-bottom: 32px;
 }
 
-input#image-search {
+textarea#image-search {
   all: unset;
-  width: 272px;
-  height: 40px;
+  width: 450px;
+  /* height: 40px; */
   border: 1px solid #808080;
   border-radius: 4px;
   padding-left: 16px;
