@@ -5,6 +5,10 @@ import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const ulElem = document.querySelector('ul.gallery');
+let gallery = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: 250,
+});
 export const showError = text => {
   iziToast.show({
     message: text,
@@ -57,10 +61,6 @@ export const showGallery = images => {
 `;
   }
   ulElem.innerHTML = images.map(imageTemplate).join('');
-  let gallery = new SimpleLightbox('.gallery a', {
-    captionsData: 'alt',
-    captionDelay: 250,
-  });
   gallery.refresh();
 };
 
